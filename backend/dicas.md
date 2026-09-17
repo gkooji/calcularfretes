@@ -6,3 +6,9 @@ server.js
 npm init -y
 # 4- instalar a dependencia do express
 npm install express
+# 5- instalar a dependencia de requisição de servidor (dominios)
+npm install cors
+# 6- instala dependencia para deixar servidor rodando sempre
+npm install nodemon
+muda o "start": "nodemon server.js
+e no terminal digita: npm run start
