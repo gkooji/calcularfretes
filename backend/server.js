@@ -20,7 +20,7 @@ app.use(cors())
 
 //objeto (tabela com os preços)
 const precos={
-    bicileta:0.75, //preço por km para bicicleta
+    bicicleta:0.75, //preço por km para bicicleta
     carro:0.25, // preço por km para bicicleta
     drone:1.20 // preço por km para drone
 }
@@ -45,7 +45,7 @@ app.post('/calcularfrete',(req,res)=>{
 
     // verifica se o tipoTransporte fornecido existe na tabela de preços
     if(precoPorKm === undefined){
-        return.res.status(400).json({error: "Tipo de transporte inválido"})
+        return res.status(400).json({error: "Tipo de transporte inválido"})
     }
 
 
